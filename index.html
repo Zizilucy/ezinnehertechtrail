@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="container">
+    <section class="address">
+    <fieldset>
+        <legend>Your address</legend>
+            <div class="flex-input">
+                <form action="" class="form"></form>
+                <label for="fname">First name</label>
+                <input type="text" name="First name" id="fname">
+            </div>
+            <div class="flex-input">
+                <label for="lname">Last name</label>
+                <input type="text"><br>
+            </div>
+            <div class="flex-input">
+                <label for="sname">Street</label>
+                <input type="text"><br>
+            </div>
+            <div class="flex-input">
+                <label for="cname">City</label>
+                <input type="text"><br>
+            </div>
+        </fieldset>
+        <br>
+    <section class="additional details">
+    <fieldset>
+        <legend>Additional details</legend>
+            <div class="flex-input">
+                <label for="biography">Biography</label>
+                <textarea name="Biography" id="bio" cols="30" rows="10"></textarea>
+            </div>
+            <div class="flex-input">
+                <label for="file-select">Image</label>
+                <input type="file" name="upload" id="file-select">
+            </div>
+            <div class="flex-input">
+                <label for="age">Age Group</label>
+                <select name="Age Group" id="age">
+                    <option value="0 to 9 Years">0 to 9 Years</option>
+                    <option value="10 to 18 Years">10 to 18 Years</option>
+                    <option value="19 to 25 Years">19 to 25 Years</option>
+                    <option value="26 to 35 Years">26 to 35 Years</option>
+                </select>
+            </div>
+    </fieldset>
+    <br>
+    <section class="interests">
+    <fieldset>
+        <legend>Interests</legend>
+        <div class="flex-input">
+            <label for="hobby">Hobbies</label>
+            <select id="hobby" multiple>
+                <option value="playing soccer">Playing soccer</option>
+                <option value="dancing">Dancing</option>
+                <option value="gardening">Gardening</option>
+                <option value="watching movies">Watching movies</option>
+            </select>
+        </div>
+        <div class="flex-input">
+            <label for="car">Favourite car?</label>
+            <select name="favourite car" id="car">
+                <option value="volvo">Volvo</option>
+                <option value="toyota">Toyota</option>
+                <option value="camry">Camry</option>
+                <option value="lexus">Lexus</option>
+            </select>
+        </div>
+        <div class="flex-input">
+            <label for="transport">Favourite public transport?</label>
+            <select id="transport" value="Ground" multiple>
+                <option value="Ground">Ground</option><br>
+                <option value="train">Train</option>
+                <option value="bus">Bus</option><br>
+                <option value="water">Water</option>
+            </select>
+    </fieldset>
+    </section>
+    </form>
+</body>
+<style>
+    .container{
+        display: flex;
+        flex-flow: column wrap;
+        height: 700px
+    }
+    input [type="text"],
+    [type="file"] {
+        padding: 2px;
+        font-size: 18px;
+        margin-left: 30px;
+    }
+    .flex-input{
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 20px;
+                height: 30px;
+            }
+    label {
+        flex-basis: 230px;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+</style>
+</html>
