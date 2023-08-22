@@ -1,0 +1,31 @@
+#search-box-filter_31 {
+    width: calc(100% + 30px);
+ }
+ label[for=search-box-filter_31] + p {
+   position: relative;
+   display: table;
+   border-radius: 5px;
+   padding-right: 30px;
+ }
+ label[for=search-box-filter_31] + p::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   right: 0;
+   height: 100%;
+   width: 20px;
+   border-radius: 0 5px 5px 0;
+   pointer-events: none;
+   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30'><polyline points='8,12,15,8,22,12' fill='none' style='stroke:white;stroke-width:2'/><polyline points='8,18,15,22,22,18' fill='none' style='stroke:white;stroke-width:2'/></svg>"),
+     linear-gradient(to bottom, #0560a1 0%, #055b99 100%);;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   
+ }
+ .hobbies{
+  overflow-y: hidden;
+ }
+ .transport{
+  overflow-y: hidden;
+ }
